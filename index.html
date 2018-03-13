@@ -12,9 +12,37 @@
         html{
             height:100%;
         }
-     </style>
-</head>    
+        @keyframes frogFlash {
+            0% {opacity: 0}
+            50% {opacity: 100}
+            75% {opacity: 0}
+            100% {opacity: 0}
+        }
+        @keyframes steamedBunFlash {
+            0% {opacity: 0}
+            50% {opacity: 0}
+            75% {opacity: 0}
+            100% {opacity: 100}
+        }
+        #qingfengdi{
+            animation:  steamedBunFlash 1.5s infinite;
+        }
+        #zhangzhe{
+            animation: frogFlash 1.5s infinite;
+        }
+        p{
+            font-size: 100px;
+            position: absolute;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
 <body>
-<h1> 苟利国家生死以，一枝一叶总关情。</h1>
+<p id="zhangzhe"> 苟利国家生死以</p>
+<p id="qingfengdi"> 一枝一叶总关情</p>
+<iframe frameborder="no"  marginwidth="0" marginheight="0" width=1350 height=286
+        src="//music.163.com/outchain/player?type=2&id=543988388&auto=0&height=66"></iframe>
 </body>
 </html>
+
